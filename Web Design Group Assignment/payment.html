@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="style-payment.css">
+    <!--fonts link-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+</head>
+<body>
+    <!--header-->
+    <header class="header">
+
+        <a href ="index.html" class="logo">
+          <img src="logo_bg_cropped.png" alt="Logo" style="width: 80px;">
+        </a>
+  
+        <nav class="navbar">
+          <a href="index.html">home</a>
+          <a href="#gallery">gallery</a>
+          <a href="#signup">sign up</a>
+          <a href="#review">review</a>
+          <a href="#faq">faq</a>
+        </nav>
+        
+      </header>
+    <!--end header-->
+
+    <div class="container">
+
+        <form action="">
+
+            <div class="row">
+
+                <div class="col">
+
+                    <h3 class="title">Billing Address</h3>
+                    <div class="inputBox">
+                        <span>Full Name :</span>
+                        <input type="text" placeholder="john doe ">
+                    </div>
+                    <div class="inputBox">
+                        <span>Email :</span>
+                        <input type="text" placeholder="example@example.com ">
+                    </div>
+                    <div class="inputBox">
+                        <span>Address:</span>
+                        <input type="text" placeholder="Apartment name, house number, street - locality">
+                    </div>
+                    <div class="inputBox">
+                        <span>City :</span>
+                        <input type="text">
+                    </div>
+                    <div class="flex">
+                        <div class="inputBox">
+                            <span>State :</span>
+                            <input type="text">
+                        </div>
+                    </div>
+                    <div class="inputBox">
+                        <span>Zip code:</span>
+                        <input type="number" placeholder="123">
+                    </div>
+                </div>
+
+                <div class="col">
+                    
+                    <h3 class="title">Payment</h3>
+                    <div class="inputBox">
+                        <span>Name on Card: </span>
+                        <input type="email" placeholder="John Doe">
+                    </div>
+                    <div class="inputBox">
+                        <span>Card number: </span>
+                        <input type="number" placeholder="1111-2222-3333-4444">
+                    </div>
+                    <div class="inputBox">
+                        <span>Valid until: </span>
+                        <input type="text" placeholder="January">
+                    </div>
+                    <div class="inputBox">
+                        <span>CVV: </span>
+                        <input type="number" placeholder="111">
+                    </div>
+                    <div class="inputBox">
+                        <span>Cards accepted :</span>
+                    </div>
+                        <img src="cards_accepted.png" width="150px">
+                </div>
+            </div>
+
+            <input type="submit" value="Confirm Payment" class="submit-btn">
+        </form>
+    </div>
+    
+    <script src="script.js"></script>
+
+</body>
+</html>

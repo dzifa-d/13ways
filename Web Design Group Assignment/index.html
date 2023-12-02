@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TravelXcess Home Page</title>
+
+    <!--custom css styles-->
+    <link rel="stylesheet" type="text/css" href="styles.css" /> 
+    <!-- extra syles links -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+  </head>
+
+  <body>
+    <header class="header">
+
+      <a href ="index.html" class="logo">
+        <img src="logo_bg_cropped.png" alt="Logo" style="width: 80px;">
+      </a>
+
+      <nav class="navbar">
+        <a href="index.html">home</a>
+        <a href="gallery.html">gallery</a>
+        <a href="#availability">book a ticket</a>
+        <a href="#review">reviews</a>
+        <a href="#faq">faq</a>
+      </nav>
+    </header>
+
+    <!--home-->
+    <section class="home" id="home">
+
+      <div class="swiper home-slider">
+
+        <div class="swiper-wrapper">
+
+          <div class="swiper-slide slide" style="background: url(night_melaka_river.jpg) no-repeat;">
+            <div class="content">
+              <h3>where your dreams come alive</h3>
+              <a href="#destinations" class="btn">Visit Here</a>
+            </div>
+          </div>
+        
+          <div class="swiper-slide slide" style="background: url(night_kltour4.png) no-repeat;">
+            <div class="content">
+              <h3>where your dreams come alive</h3>
+              <a href="#" class="btn">Visit Here</a>
+            </div>
+          </div>
+
+          <div class="swiper-slide slide" style="background: url(night_kltour3.jpg) no-repeat;">
+            <div class="content">
+              <h3>where your dreams come alive</h3>
+              <a href="#" class="btn">Visit Here</a>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="swiper-button-next" style="background-color: rgb(15, 15, 15); color: white;"></div>
+        <div class="swiper-button-prev" style="background-color: rgb(15, 15, 15); color: white;"></div>
+      </div>
+
+    </section>
+
+    <section class="availability">
+
+      <form action="">
+        <div class="box">
+          <p>Pick a date<span>*</span></p>
+          <input type="date" class="input">
+        </div>
+
+        <!--  <div class="box">
+          <p>Adult<span>*</span></p>
+          <select name="adult" id="" class="input">
+            <option value="1">1 adult</option>
+            <option value="2">2 adults</option>
+            <option value="3">3 adults</option>
+            <option value="4">4 adults</option>
+            <option value="5">5 adults</option>
+            <option value="6">6 adults</option>
+            <option value="7">7 adults</option>
+          </select>
+        </div>
+
+        <div class="box">
+          <p>Child<span>*</span></p>
+          <select name="child" id="" class="input">
+            <option value="1">1 child</option>
+            <option value="2">2 children</option>
+            <option value="3">3 children</option>
+            <option value="4">4 children</option>
+            <option value="5">5 children</option>
+            <option value="6">6 children</option>
+            <option value="7">7 children</option>
+          </select>
+        </div>  -->
+
+        <div class="box">
+          <p>state<span>*</span></p>
+          <select name="state" id="" class="input">
+            <option>Genting</option>
+            <option>Selangor</option>
+            <option>Melaka</option>
+          </select>
+        </div>
+
+        <input type="submit" value="check availability" class="btn">
+      </form>
+
+    </section>
+
+    <section class="destinations" id="destinations">
+      <div class="container">
+
+        <div class="destinations-header">
+          <h1>Packages of the Week</h1>
+        </div>
+
+        <div class="custom-row" style="margin-top: 30px;">
+          <div class="custom-col">
+            <div class="card">
+              <img src="genting_skyworld.jpeg">
+              <div class="card-body">
+                <h1>Genting SkyWorlds</h1>
+                <p> Explore the charm of Genting with our delightful sky worlds experience. There are many rides to try, foods to taste and sights to see.</p>
+                <div class="ratings">
+                  <i class='bx bxs-star' ></i>
+                  <i class='bx bxs-star' ></i>
+                  <i class='bx bxs-star' ></i>
+                  <i class='bx bxs-star-half' ></i>
+                  <span>(50 Reviews)</span>
+                </div>
+              
+                <a href="genting_page.html" class="view-more">view more &raquo;</a>
+              </div>
+            </div>
+          </div>
+        
+          <div class="custom-col">
+            <div class="card">
+              <img src="backgroundimg.jpg">
+              <div class="card-body">
+                <h1>KLCC Towers</h1>
+                <p> View the beautiful city of Kuala Lumpur from its greatest heights. These twin towers
+                  provide an experience to remember</p>
+                <div class="ratings">
+                  <i class='bx bxs-star' ></i>
+                  <i class='bx bxs-star' ></i>
+                  <i class='bx bxs-star' ></i>
+                  <i class='bx bxs-star' ></i>
+                  <i class='bx bxs-star-half' ></i>
+                  <span>(105 Reviews)</span>
+                </div>
+              
+                <a href="klcc_page.html" class="view-more">view more &raquo;</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="custom-col">
+            <div class="card">
+              <img src="penang1.jpg">
+              <div class="card-body">
+                <h1>Penang Love Lane</h1>
+                <p>This beautiful street is vibrant and alive with rich Malaysian culture.</p>
+                <div class="ratings">
+                  <i class='bx bxs-star' ></i>
+                  <i class='bx bxs-star' ></i>
+                  <i class='bx bxs-star' ></i>
+                  <i class='bx bxs-star' ></i>
+                  <i class='bx bxs-star-half' ></i>
+                  <span>(68 Reviews)</span>
+                </div>
+              
+                <a href="penang_page.html" class="view-more">view more &raquo;</a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+    <script src="script.js"></script>
+
+  </body>
+</html>

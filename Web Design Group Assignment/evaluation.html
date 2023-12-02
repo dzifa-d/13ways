@@ -1,0 +1,53 @@
+<!DOCTYPE html> 
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Evaluation Page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h1>Evaluation</h1>
+
+<form action="#" method="post" onsubmit="return validateForm()">
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" required>
+
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required>
+
+    <label for="phone">Phone Number:</label>
+    <input type="tel" id="phone" name="phone" >
+    
+
+    <label>Gender:</label>
+        <label for="female">Female</label>
+    <input type="radio" id="female" name="gender" value="female" required>
+        <label for="male">Male</label>
+
+    <input type="radio" id="male" name="gender" value="male" required>
+
+    <label for="activity">Choose an Activity:</label>
+    <select id="activity" name="activity" required>
+        <option value="yoga">Genting</option>
+        <option value="meditation"> Kuala Lumpur </option>
+        <option value="fitness">SkyWorlds Theme Park </option>
+    </select>
+
+    <label for="review">Review:</label>
+    <textarea id="review" name="review" rows="4" cols="50"></textarea>
+
+    <input type="submit" value="Submit">
+</form>
+
+<script>
+    function validateForm() {
+        
+        alert("Submission successful! Thank you for your feedback.");
+        return true; 
+    }
+</script>
+
+</body>
+</html>

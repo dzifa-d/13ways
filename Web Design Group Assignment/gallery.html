@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Gallery</title>
+    <link rel="stylesheet" href="style-gallery.css">
+</head>
+<body>
+    <header class="header">
+
+        <a href ="index.html" class="logo">
+            <img src="logo_bg_cropped.png" alt="Logo" style="width: 80px;">
+        </a>
+
+        <nav class="navbar">
+            <a href="index.html">home</a>
+            <a href="gallery.html">gallery</a>
+            <a href="#availability">book a ticket</a>
+            <a href="#review">reviews</a>
+            <a href="#faq">faq</a>
+        </nav>
+    </header>
+    <div class="full-img"id="fullImgBox">
+        <img src="backgroundimg.jpg"id="fullImg">
+        <span onclick="closeFullImg()">X</span>
+    </div>
+    <div class="img-gallery">
+        <img src="genting2.jpeg" onclick="openFullImg(this.src)">
+        <img src="night_melaka_river.jpg" onclick="openFullImg(this.src)">
+        <img src="night_kltour3.jpg" onclick="openFullImg(this.src)">
+        <img src="batucave.jpg" onclick="openFullImg(this.src)">
+        <img src="genting7.jpeg" onclick="openFullImg(this.src)">
+        <img src="kl2.jpg" onclick="openFullImg(this.src)">
+        <img src="melaka_river.jpg" onclick="openFullImg(this.src)">
+        <img src="penang1.jpg" onclick="openFullImg(this.src)">
+    </div>
+    
+    <script>
+
+        var fullImgBox = document.getElementById("fullImgBox");
+        var fullImgBox = document.getElementById("fullImg");
+
+        function openFullImg(pic){
+        fullImgBox.style.display = "flex";
+        fullImg.src = pic;
+        }
+
+
+        function closeFullImg(){
+        fullImgBox.style.display = "none";
+        }
+    </script>
+</body>
+</html>
